@@ -25,4 +25,6 @@ cv.imshow('xor', bitwise_xor)
 bitwise_not = cv.bitwise_not(rectangle)
 cv.imshow('not', bitwise_not)
 
+
+
 cv.waitKey(0)
