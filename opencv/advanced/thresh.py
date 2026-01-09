@@ -18,5 +18,4 @@ adaptive_thresh = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_MEAN_C, cv.
 cv.imshow('adaptive threshold', adaptive_thresh)
 
 
-
 cv.waitKey(0)
