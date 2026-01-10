@@ -1,0 +1,48 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Model files (too large for Git)
+*.pth
+*.pt
+*.pkl
+*.h5
+*.pb
+*.onnx
+*.ckpt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (usually too large)
+*.npy
+*.npz
+
+# Training outputs
+*.yml
+*.yaml
+!requirements.txt
+label_map.json
+
+# Logs
+*.log
+

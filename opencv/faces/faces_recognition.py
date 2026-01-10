@@ -17,7 +17,7 @@ p.sort()  # Sort to ensure consistent label assignment (must match training orde
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img = cv.imread('/home/tony/ai-ml-projects/opencv/resources/Faces/val/ben_afflek/2.jpg')
+img = cv.imread('/home/tony/ai-ml-projects/opencv/resources/Faces/val/ben_afflek/4.jpg')
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Unidentified person', gray)
