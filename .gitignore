@@ -1,48 +1,35 @@
-# Python virtual environment
+# --- Python Standard ---
 venv/
 env/
-ENV/
 .venv/
-
-# Python cache
 __pycache__/
 *.py[cod]
-*$py.class
 *.so
 
-# Model files (too large for Git)
+# --- Model Artifacts (Too large for Git) ---
+# We ignore the .pth files, but we keep the empty 'model/' folder
+model/*.pth
 *.pth
-*.pt
-*.pkl
-*.h5
-*.pb
-*.onnx
-*.ckpt
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# --- Data & Logs ---
+# Ignore the actual downloaded images (save space)
+resources/Faces/
+resources/Celebrity Faces Dataset/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Ignore the CSV splits (they contain absolute paths specific to YOUR PC)
+training/data_splits/
 
-# OS
+# Ignore Kaggle download cache if local
+.kaggle/
+
+# --- Logs & OS Junk ---
+*.log
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
-# Data files (usually too large)
-*.npy
-*.npz
-
-# Training outputs
-*.yml
-*.yaml
-!requirements.txt
-label_map.json
-
-# Logs
-*.log
-
+# --- Temporary Test Images ---
+test_images/*
+# (Optional) Keep one placeholder if you want the folder to exist
+!test_images/.gitkeep
