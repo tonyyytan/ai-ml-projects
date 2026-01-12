@@ -4,15 +4,19 @@ Wikipedia API fetcher for retrieving and processing Wikipedia articles.
 import wikipedia
 from typing import List, Dict
 from langchain_core.documents import Document
+from langchain.tools import tool
 
 
+@tool
 def fetch_wikipedia_article(topic: str, sentences: int = 3) -> str:
     """
-    Fetch a Wikipedia article summary for a given topic.
+    Useful for retrieving detailed information about a specific topic from Wikipedia.
+    Use this when the user asks for facts, history, or definitions that might not be in the chat history.
+    The function fetches a Wikipedia article summary for the given topic.
     
     Args:
         topic: The topic to search for on Wikipedia
-        sentences: Number of sentences to return in the summary
+        sentences: Number of sentences to return in the summary (default: 3)
         
     Returns:
         Summary text from Wikipedia
@@ -62,13 +66,16 @@ def fetch_multiple_topics(topics: List[str], sentences: int = 5) -> List[Documen
     return documents
 
 
+@tool
 def search_wikipedia_topics(query: str, results: int = 5) -> List[str]:
     """
-    Search Wikipedia for topics related to a query.
+    Useful for searching Wikipedia to find relevant topics related to a query.
+    Use this when the user asks about topics that might need exploration or when you need to discover related Wikipedia articles.
+    Returns a list of topic titles that match the search query.
     
     Args:
         query: Search query
-        results: Number of results to return
+        results: Number of results to return (default: 5)
         
     Returns:
         List of topic titles
