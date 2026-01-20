@@ -1,0 +1,13 @@
+
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# Video processing outputs
+raw_videos/
+clips/
+downloads/
+training_data/

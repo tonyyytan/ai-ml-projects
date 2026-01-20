@@ -1,0 +1,35 @@
+{
+    "videos": [
+        {
+            "url": "https://www.youtube.com/watch?v=EXAMPLE_VIDEO_ID",
+            "video_id": "example_video_1",
+            "clips": [
+                {
+                    "name": "shot_form_1",
+                    "start": 10.5,
+                    "end": 15.0,
+                    "description": "Player 1 - free throw"
+                },
+                {
+                    "name": "shot_form_2",
+                    "start": 25.0,
+                    "end": 30.5,
+                    "description": "Player 1 - three pointer"
+                }
+            ]
+        },
+        {
+            "url": "https://www.youtube.com/watch?v=ANOTHER_VIDEO_ID",
+            "video_id": "example_video_2",
+            "clips": [
+                {
+                    "name": "shot_form_3",
+                    "start": 5.0,
+                    "end": 12.0,
+                    "description": "Player 2 - jump shot"
+                }
+            ]
+        }
+    ]
+}
+
